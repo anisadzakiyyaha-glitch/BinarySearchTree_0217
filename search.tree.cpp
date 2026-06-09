@@ -17,3 +17,14 @@ public:
         rightchild = r;
     }
 };
+
+class binarytree
+{
+public:
+    node *root;
+
+    binarytree()
+    {
+        root = NULL;
+    }
+};
