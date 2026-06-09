@@ -123,3 +123,8 @@ public:
         }
     }
 };
+
+int main()
+    {
+        binarytree obj;
+    }
