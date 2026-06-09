@@ -73,7 +73,7 @@ public:
             else
                 currentnode = currentnode->rightchild;
         }
-    };
+    }
 
     void inorder(node *ptr)
     {
@@ -88,5 +88,21 @@ public:
             inorder(ptr->leftchild);
             cout << ptr->info << " ";
             inorder(ptr->rightchild);
+        }
+    }
+
+    void preorder(node *ptr)
+    {
+        if (root == NULL)
+        {
+            cout << "tree is empty" << endl;
+            return;
+        }
+
+        if(ptr != NULL)
+        {
+            cout << ptr->info << " ";
+            preorder(ptr->leftchild);
+            preorder(ptr->rightchild);
         }
     }
